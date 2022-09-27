@@ -4,6 +4,10 @@ html, body{
     font-size: 14px
 }
 
+a {
+    opacity: 0;
+}
+
 @media screen and (min-width: 700px) {
     body {
         font-size: 12px;
@@ -13,6 +17,10 @@ html, body{
         max-width: 650px;
         text-align: center;
         margin: 0 auto;
+    }
+
+    a {
+        opacity: 1;
     }
 }
 

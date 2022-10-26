@@ -35,7 +35,7 @@ a {
 
 /* NAV */
 nav {
-	background-color: grey;
+	background-color: goldenrod;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -73,7 +73,6 @@ nav ul li {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	padding-bottom: 10px;
 	min-height: 250px;
 }
 
@@ -101,4 +100,12 @@ nav ul li {
 
 main section {
 	padding: 10px;
+}
+
+/* FOOTER */
+footer {
+	text-align: center;
+	background-color: goldenrod;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }

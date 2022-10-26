@@ -1,7 +1,6 @@
 [class*='col-'] {
 	float: left;
 	padding: 15px;
-	border: 1px solid firebrick;
 	text-align: center;
 	box-sizing: border-box;
 	margin-left: 1%;
@@ -50,4 +49,16 @@
 }
 .col-12 {
 	width: 100%;
+}
+
+@media screen and (min-width: 376px) {
+	.card {
+		width: calc(6 * ((100% - 11%) / 12) + (5 * 1%));
+	}
+}
+
+@media screen and (min-width: 584px) {
+	.card {
+		width: calc(4 * ((100% - 11%) / 12) + (3 * 1%));
+	}
 }

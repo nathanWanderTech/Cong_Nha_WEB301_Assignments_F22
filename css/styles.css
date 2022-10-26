@@ -19,13 +19,25 @@ a {
 a {
 	text-decoration: none;
 	letter-spacing: 1px;
-	text-transform: uppercase;
+}
+
+.container {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+@media screen and (min-width: 376px) {
+	.container {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }
 
 /* NAV */
 nav {
 	background-color: grey;
-	padding: 1rem;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 nav i {
@@ -61,7 +73,19 @@ nav ul li {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	padding: 10px;
+	padding-bottom: 10px;
+	min-height: 250px;
+}
+
+.card .head {
+	border-bottom: 2px solid blue;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	height: 165px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: grey;
 }
 
 .card img {
@@ -70,7 +94,8 @@ nav ul li {
 	display: block;
 }
 
-.card h3, .card p {
+.card h3,
+.card p {
 	text-align: center;
 }
 

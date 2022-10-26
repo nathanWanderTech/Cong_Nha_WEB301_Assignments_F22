@@ -54,6 +54,13 @@
 	.card {
 		width: calc(6 * ((100% - 11%) / 12) + (5 * 1%));
 	}
+	.row-1 .item {
+		width: calc(4 * ((100% - 11%) / 12) + (3 * 1%));
+	}
+
+	.row-2 .item {
+		width: calc(6 * ((100% - 11%) / 12) + (5 * 1%));
+	}
 }
 
 @media screen and (min-width: 584px) {

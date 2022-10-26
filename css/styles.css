@@ -19,6 +19,7 @@ a {
 a {
 	text-decoration: none;
 	letter-spacing: 1px;
+	text-transform: capitalize;
 }
 
 .container {
@@ -108,4 +109,20 @@ footer {
 	background-color: goldenrod;
 	padding-bottom: 20px;
 	padding-top: 20px;
+}
+
+ol li {
+	padding-bottom: 12px;
+	font-weight: bold;
+}
+ol li:first-child {
+	padding-top: 12px;
+}
+
+ol .item {
+	border: 1px solid blue;
+	padding: 1rem;
+	min-height: 218px;
+	border-radius: 10px;
+	margin-bottom: 10px;
 }

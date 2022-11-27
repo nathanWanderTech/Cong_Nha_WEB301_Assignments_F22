@@ -42,12 +42,27 @@
       </div>
     </nav>
   </header>
-<br>
+  <br>
   <main>
     <!-- Content goes here -->
     <div class="container">
+      <div class="btn-group">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1"
+          aria-expanded="false" aria-controls="collapseExample1">
+          SK Grocers
+        </button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2"
+          aria-expanded="false" aria-controls="collapseExample2">
+          Game MD
+        </button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3"
+          aria-expanded="false" aria-controls="collapseExample3">
+          Game Cycle
+        </button>
+      </div>
+
       <div class="row">
-        <div class="col">
+        <div id="collapseExample1" class="col-12 col-lg-6 col-xl-4 collapse show">
           <div class="card">
             <img src="https://skgrocers.ca/wp-content/uploads/2022/05/SK_SiteLogo.png" class="card-img-top"
               alt="sk-logo">
@@ -83,7 +98,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div id="collapseExample2" class="col-12 col-lg-6 col-xl-4 collapse">
           <div class="card">
             <img src="assets/gamemd_mobile.jpg" alt="logo" class="card-img-top">
             <div class="card-body">
@@ -120,11 +135,11 @@
           </div>
         </div>
 
-        <div class="col">
+        <div id="collapseExample3" class="col-12 col-lg-12 col-xl-4 collapse">
           <div class="card">
             <img src="http://gamecycle.ca/images/gclogo.png" alt="cycle-logo" class="card-img-top">
             <div class="card-body">
-              <h5 class="card-title text-center">Game MD</h5>
+              <h5 class="card-title text-center">Game Cycle</h5>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
@@ -162,7 +177,7 @@
   </main>
 
   <br>
-  
+
   <footer>
     <!-- Github link goes here -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">

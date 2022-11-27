@@ -2,7 +2,10 @@
 
 Assignment for WEB 301 - Mobile Web Development - Fall 2022
 
-Use [this link](https://www.webmobilefirst.com/en/devices/) to find your mobile devices resolution. Note your phone and its resolution below.
+# Boostrap components used
 
-Phone:
-Resolution:
+# Card
+Card is great to group business information
+
+# Collapse
+Collapse is good on mobile when users don't have to scroll too much

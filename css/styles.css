@@ -2,3 +2,9 @@ html, body{
     margin: 0;
     padding: 0;
 }
+
+img[alt="sk-logo"], img[alt="cycle-logo"] {
+    padding-top: 10px;
+    width: 160px;
+    margin: 0 auto;
+}

@@ -11,6 +11,7 @@
       event.preventDefault()
       event.stopPropagation()
       if (form.checkValidity()) {
+        console.log('Form passed')
         // validation passed, so we can open a modal
         // This link leads to the documentation on how to create a modal in JavaScript
         // https://getbootstrap.com/docs/5.2/components/modal/#via-javascript

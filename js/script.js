@@ -1,30 +1,52 @@
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
-  'use strict'
+	'use strict';
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
+	// Fetch all the forms we want to apply custom Bootstrap validation styles to
+	const forms = document.querySelectorAll('.needs-validation');
 
-  // Loop over them and prevent submission
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      event.preventDefault()
-      event.stopPropagation()
-      if (form.checkValidity()) {
-        console.log('Form passed')
-        // validation passed, so we can open a modal
-        // This link leads to the documentation on how to create a modal in JavaScript
-        // https://getbootstrap.com/docs/5.2/components/modal/#via-javascript
-        // Given the code found there, first create your new instance of a Modal, by selecting your pages HTML modal (you don't need to pass in options)
-        
+	// Loop over them and prevent submission
+	Array.from(forms).forEach((form) => {
+		form.addEventListener(
+			'submit',
+			(event) => {
+				event.preventDefault();
+				event.stopPropagation();
+				if (form.checkValidity()) {
+					console.log('Form passed');
+					// validation passed, so we can open a modal
+					// This link leads to the documentation on how to create a modal in JavaScript
+					// https://getbootstrap.com/docs/5.2/components/modal/#via-javascript
+					// Given the code found there, first create your new instance of a Modal, by selecting your pages HTML modal (you don't need to pass in options)
 
-        // then open it by using the show() method
-        const successModal = new bootstrap.Modal(document.getElementById('submittedModal'));
-        successModal.show();
-      }
+					// then open it by using the show() method
+					const successModal = new bootstrap.Modal(document.getElementById('submittedModal'));
+					successModal.show();
 
-      
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
+					// CONFETTI
+					const duration = 2 * 1000;
+					const end = Date.now() + duration;
+					(function frame() {
+						confetti({
+							particleCount: 7,
+							angle: 60,
+							spread: 55,
+							origin: { x: 0 },
+						});
+						confetti({
+							particleCount: 7,
+							angle: 120,
+							spread: 55,
+							origin: { x: 1 },
+						});
+
+						if (Date.now() < end) requestAnimationFrame(frame);
+					})();
+				}
+
+				form.classList.add('was-validated');
+			},
+			false
+		);
+	});
+})();

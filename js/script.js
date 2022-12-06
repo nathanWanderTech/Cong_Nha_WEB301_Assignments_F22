@@ -19,7 +19,8 @@
         
 
         // then open it by using the show() method
-
+        const successModal = new bootstrap.Modal(document.getElementById('submittedModal'));
+        successModal.show();
       }
 
       
